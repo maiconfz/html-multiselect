@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>title</title>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./i9multiselect.css" />
+
+    <style>
+        select option {
+            padding: 5px;
+        }
+    </style>
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./i9multiselect.js"></script>
+    <script>
+      $(() => {
+        $("select").i9multiselect().find('option');
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>i9multiselect</h1>
+      <select id="select" class="form-control i9multiselect" multiple required>
+        <option value="1">Value 1</option>
+        <option value="2">Value 2</option>
+        <option value="3">Value 3</option>
+        <option value="4">Value 4</option>
+        <option value="5">Value 5</option>
+        <option value="6">Value 6</option>
+        <option value="7">Value 7</option>
+        <option value="8">Value 8</option>
+        <option value="9">Value 9</option>
+        <option value="10">Value 10</option>
+      </select>
+    </div>
+  </body>
+</html>
