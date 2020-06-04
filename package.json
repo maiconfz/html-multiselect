@@ -1,0 +1,43 @@
+{
+  "name": "i9multiselect",
+  "description": "A tool to emulate check-boxes on html select multiple element, using jquery and fontawesome",
+  "version": "0.1.0",
+  "keywords": [
+    "jquery, fontawesome, checkbox, multiselect, html"
+  ],
+  "contributors": [
+    {
+      "name": "Maicon Fonseca Zanco",
+      "email": "maiconfz@gmail.com",
+      "web": "https://www.linkedin.com/in/maiconfz/"
+    },
+    {
+      "name": "Maicon Ribeiro Banni",
+      "email": "",
+      "web": "https://www.linkedin.com/in/maiconbanni/"
+    }
+  ],
+  "maintainers": [
+    {
+      "name": "mmi9",
+      "email": "contact@mmi9.net",
+      "web": "https://mmi9.net/"
+    }
+  ],
+  "bugs": {
+    "web": "https://github.com/mmi9/i9multiselect/issues"
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "git@github.com:mmi9/i9multiselect.git"
+    }
+  ],
+  "licenses": [
+    {
+      "name": "The Unlicense",
+      "url": "https://github.com/mmi9/i9multiselect/blob/master/LICENSE"
+    }
+  ],
+  "homepage": "https://github.com/mmi9/i9multiselect"
+}
