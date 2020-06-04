@@ -21,7 +21,7 @@
                     self.toggleOptionSelect($(event.target));
                 })
                 .keydown((event) => {
-                    switch (event.key) {
+                    switch (event.code) {
                         case 'ArrowDown':
                             event.preventDefault();
                             self.focusNextPreviousOption();
@@ -30,7 +30,7 @@
                             event.preventDefault();
                             self.focusNextPreviousOption(true);
                             break;
-                        case ' ':
+                        case 'Space':
                             event.preventDefault();
                             self.toggleOptionSelect(self.$options.filter('[data-focus="true"]'));
                             break;
