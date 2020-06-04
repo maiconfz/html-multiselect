@@ -1,2 +1,2 @@
 # i9multiselect
-A tool to emulate check-boxes on html select multiple element, using jquery and fontawesome
+A jquery plugin to emulate checkboxes on html select multiple element, using jquery and fontawesome
