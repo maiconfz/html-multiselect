@@ -39,5 +39,8 @@
       "url": "https://github.com/mmi9/i9multiselect/blob/master/LICENSE"
     }
   ],
-  "homepage": "https://github.com/mmi9/i9multiselect"
+  "homepage": "https://github.com/mmi9/i9multiselect",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0"
+  }
 }
