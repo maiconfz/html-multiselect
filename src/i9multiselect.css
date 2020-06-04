@@ -1,4 +1,5 @@
-select[multiple].i9multiselect {
+select[multiple].i9multiselect,
+select[multiple].i9multiselect option {
   box-sizing: border-box;
 }
 
