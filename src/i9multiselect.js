@@ -21,7 +21,7 @@
                     self.toggleOptionSelect($(event.target));
                 })
                 .keydown((event) => {
-                    switch (event.code) {
+                    switch (event.originalEvent.code) {
                         case 'ArrowDown':
                             event.preventDefault();
                             self.focusNextPreviousOption();
