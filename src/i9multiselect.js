@@ -14,7 +14,7 @@
             this.$select
                 .mousedown((event) => { event.preventDefault(); })
                 .mouseup((event) => { event.preventDefault(); })
-                .focus((event) => {event.preventDefault(); })
+                .focus((event) => { event.preventDefault(); })
                 .click((event) => {
                     event.preventDefault();
                     self.$select.focus();
@@ -46,6 +46,8 @@
         }
 
         toggleOptionSelect($option) {
+            const selectScrollTop = this.$select.scrollTop();
+
             if ($option.prop('selected') || $option.attr('selected') === 'selected') {
                 $option.prop('selected', false).attr('selected', null);
             } else {
@@ -54,6 +56,9 @@
 
             this.$options.filter('option[data-focus="true"]').data('focus', null).attr('data-focus', null).removeClass('focus');
             $option.data('focus', true).attr('data-focus', true).addClass('focus');
+
+            setTimeout(() => { this.$select.scrollTop(selectScrollTop) }, 0);
+
             return this;
         };
 
@@ -78,11 +83,11 @@
             }
 
             $optionToFocus.data('focus', true).attr('data-focus', true).addClass('focus');
-            
+
             let ignoreSpace = this.$select.position().top + parseInt(this.$select.css('border-top-width')) + parseInt(this.$select.css('padding-top'));
             let firstOptionRealTopPosition = this.$options.first().position().top - ignoreSpace;
             let optionToFocusRealTopPosition = $optionToFocus.position().top - ignoreSpace;
-            let scrollTopPosition =  optionToFocusRealTopPosition + Math.abs(firstOptionRealTopPosition);
+            let scrollTopPosition = optionToFocusRealTopPosition + Math.abs(firstOptionRealTopPosition);
             this.$select.scrollTop(scrollTopPosition);
             return this;
         };

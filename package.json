@@ -1,7 +1,7 @@
 {
   "name": "i9multiselect",
   "description": "A tool to emulate check-boxes on html select multiple element, using jquery and fontawesome",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "keywords": [
     "jquery, fontawesome, checkbox, multiselect, html"
   ],
